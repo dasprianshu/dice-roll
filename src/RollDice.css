@@ -1,0 +1,25 @@
+.RollDice{
+    text-align: center;
+}
+
+.RollDice button{
+    background-color: #000000;
+    color: white;
+    width: 15em;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 1.5em;
+    font-size: large;
+}
+
+.RollDice button:hover {
+    background-color: #085e94;
+    cursor: pointer;
+}
+
+.RollDice-Dice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
