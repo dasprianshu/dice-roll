@@ -18,8 +18,11 @@ class RollDice extends Component{
         let dieRoll1 = ( Math.floor(Math.random() * 6) + 1) ;
         let dieRoll2 = ( Math.floor(Math.random() * 6) + 1) ;
         this.setState(
-            {dieFace1 : dieRoll1, dieFace2 : dieRoll2, isRolling : true }
+            {isRolling : true }
         );
+        setTimeout(() => {
+            this.setState({dieFace1 : dieRoll1, dieFace2 : dieRoll2});
+        }, 500);
         setTimeout(() => {
             this.setState({isRolling : false});
         }, 1000);
@@ -29,8 +32,10 @@ class RollDice extends Component{
         return(
             <div className="RollDice">
                 <div className="RollDice-Dice">
-                    <Die face = {this.state.dieFace1} isRolling = {this.state.isRolling}/>
-                    <Die face = {this.state.dieFace2} isRolling = {this.state.isRolling}/>
+                    <div className={`Container ${this.state.isRolling && 'Swing'}`}>
+                        <Die face = {this.state.dieFace1} isRolling = {this.state.isRolling}/>
+                        <Die face = {this.state.dieFace2} isRolling = {this.state.isRolling}/>
+                    </div>
                 </div>
                 
                 <button onClick={this.randomFace} disabled={this.state.isRolling} >

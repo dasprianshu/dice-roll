@@ -3,23 +3,70 @@
 }
 
 .RollDice button{
-    background-color: #000000;
-    color: white;
-    width: 15em;
+    background-color: #ffffff;
+    color: #000000;
+    width: 12em;
     border: 0px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-top: 20px;
-    padding: 1.5em;
-    font-size: large;
+    padding: 1em;
+    font-size: 24px;
 }
 
 .RollDice button:hover {
-    background-color: #085e94;
+    background-color: #8cc012;
     cursor: pointer;
+    color: #ffffff;
 }
 
 .RollDice-Dice{
+    margin: 50px 0 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.Container{
+    background-color: beige;
+    border-radius: 40px;
+    width: 27rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Swing{
+    background-color: #ffffff;
+    width: 27.5rem;
+    animation-name: hover-swing;
+    animation-duration: 1s;
+}
+
+@keyframes hover-swing{
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 10deg);
+        transform: rotate3d(0, 0, 1, 10deg);
+    }
+
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -7deg);
+        transform: rotate3d(0, 0, 1, -7deg);
+    }
+
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
+    }
+
+    100% {
+        -webkit-transform: rotate3d(0, 0, 1, 0);
+        transform: rotate3d(0, 0, 1, 0);
+    }
+}
+

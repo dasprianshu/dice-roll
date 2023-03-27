@@ -1,4 +1,5 @@
-# A simple dice rolling react app.
+## Dice-roll
+### A simple dice rolling react app.
 &NewLine;
 &NewLine;
 ## View Deployment :
