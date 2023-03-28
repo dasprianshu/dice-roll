@@ -41,6 +41,7 @@
     width: 27.5rem;
     animation-name: hover-swing;
     animation-duration: 1s;
+    transform-origin: top center;
 }
 
 @keyframes hover-swing{

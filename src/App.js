@@ -3,7 +3,11 @@ import RollDice from './RollDice'
 function App() {
   return (
     <div className="App">
-		<RollDice/>
+		  <RollDice/>
+      <footer>
+        <i class="fa-regular fa-heart fa-flip fa-lg"></i>
+        <span>Coded By Priyanshu</span>
+      </footer>
     </div>
   );
 }
